@@ -1,0 +1,66 @@
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/Imagen\ \(36\).png);
+    display: flex;
+    align-items: center;
+
+    &__poster{
+        width: 696px;
+        height: 50px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    &__title{
+        width: 696px;
+        height: 50px;
+        color: var(--primary-white);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    &__button{
+        width: 261px;
+   height: 50px;
+   background: var(--primary-blue);
+   border: none;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   position:relative;
+   margin-top: 100px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   color: var(--primary-white);
+   cursor: pointer; 
+   transition: 250ms all cubic-bezier(0.4,0,0.2,1); 
+
+
+        &:hover{
+            background-color: var(--primary-white);
+    color: var(--primary-black);
+        }
+    }
+}
+
+
+.opacity{
+    Width:100%;
+    Height:600px;
+    Top:80px;
+    background: rgba(47, 48, 58, 0.4);
+    position: absolute;
+}
+
+

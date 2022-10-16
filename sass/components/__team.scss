@@ -1,0 +1,101 @@
+.team{
+    background: var(--second-white);
+    margin-top:94px;
+    padding-bottom: 90px;
+
+    &__title{
+        padding-top: 94px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-black); 
+    }
+
+    &__members{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:50px;
+        position: relative;
+    }
+
+    &__member{
+        margin: 17px;
+        background-color: var(--primary-white);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__photo{
+        width: 270px;
+        height: 260px;
+    }
+
+    &__name{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-black);
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    &__profession{
+        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-grey);
+    }
+
+    &__social-network{
+        width: 206px;
+        height: 44px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__networks{
+        width: 44px;
+        height: 44px;
+        border-radius:50%;
+        cursor:pointer;
+        transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+
+        &--active:hover{
+            background-color: var(--primary-blue);
+        }
+    }
+
+    &__effect{
+        fill: var(--second-grey);
+        cursor:pointer;
+        transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+
+
+        &--active:hover{
+            fill: var(--primary-white);
+        }
+    }
+
+}
