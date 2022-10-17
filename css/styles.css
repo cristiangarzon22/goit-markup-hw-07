@@ -17,7 +17,7 @@
 /*formulario estilos*/
 
 
-#modal1{
+.modal1{
     width: 528px;
     height: 581px;
     margin-left: auto;
@@ -48,7 +48,7 @@
     background-color: rgb(114, 113, 116);
 }
 
- .modal1__close-form{
+ .modal1__icon-close{
     position: absolute;
     right: 20%;
     top:20%;
@@ -103,11 +103,11 @@
     position:absolute;
 }
 
-.form__input:focus{
+.form__input--border:focus{
     outline:1px solid var(--primary-blue);
 }
 
-.form__input:focus~.form__icon{
+.form__input--border:focus~.form__icon--fill{
     fill:var(--primary-blue);
 }
 
@@ -181,7 +181,7 @@
     width: 400px;
 }
 
-.center-form{
+.form__center{
     width:100%;
     display:flex;
     justify-content: center;
@@ -392,7 +392,7 @@
    transition: 250ms all cubic-bezier(0.4,0,0.2,1);  
 }
 
-.banner__button:hover{
+.banner__button--active:hover{
     background-color: var(--primary-white);
     color: var(--primary-black);
 }
@@ -820,7 +820,7 @@
 
 /*footer*/
 
-footer{
+.footer{
     width: 100%;
     height: 252px;
     background: var(--second-black);

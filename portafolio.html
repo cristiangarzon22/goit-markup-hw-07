@@ -11,12 +11,12 @@
     <title>Portafolio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="navigation">   
-       <a href="index.html" class="logo">WebStudio</a>
+       <a href="#" class="logo">WebStudio</a>
        <nav>
            <ul class="navigation-list">
-                  <li class="navigation-list__link"><a href="#"><button class="navigation-list__linkage navigation-list__linkage--active" onclick="window.modal1.showModal();">Estudio</button></a></li>
+                  <li class="navigation-list__link"><a href="#" class="navigation-list__linkage navigation-list__linkage--active">Estudio</a></li>
                   <li class="navigation-list__link"><a href="portafolio.html" class="navigation-list__linkage navigation-list__linkage--active">portafolio</a></li>
                   <li class="navigation-list__link"><a href="#" class="navigation-list__linkage navigation-list__linkage--active">Contactos</a></li>
            </ul>
@@ -25,66 +25,15 @@
            <svg class="data__header-icons data__header-icons--active" width="16" height="12">
                <use href="./images/svg/icons.svg#header-mail"></use>
            </svg>
-           <li class="information__link"><a href="#" mailto:info@devstudio.com  id="correo" class="information__linkage information__linkage--active">info@devstudio.com</a></li>
+           <li class="data__link"><a href="#" mailto:info@devstudio.com  id="correo" class="data__linkage data__linkage--active">info@devstudio.com</a></li>
            <svg class="data__header-icons data__header-icons--active" width="16" height="15">
                <use href="./images/svg/icons.svg#header-phone"></use>
            </svg>
-           <li class="information__link"><a href="#" tel:+575555296000 class="information__linkage information__linkage--active">+575555296000</a></li>
+           <li class="data__link"><a href="#" tel:+575555296000 class="data__linkage data__linkage--active">+575555296000</a></li>
        </ul>
        </div>
        </header>
        <hr>
-       <dialog id="modal1">
-        <button  onclick="window.modal1.close();">
-         <div class="modal1__close  modal1__close--active">   
-        <svg  class="modal1__close-form" width="15" height="15">
-            <use href="./images/svg/icons.svg#icono-cerrar"></use>
-        </svg>
-        </div>
-        </button>
-        <form id="formulario" class="form" name="form" autocomplete="on" novalidate>
-            <legend class="form__legend">Deje sus datos, nos contactaremos con usted</legend>
-            <label class="form__label" for="nombre">Nombre
-                <div class="form__picture">
-                    <input type="text" class="form__input" name="name" id="nombre"   required   title="debe incluir por lo menos un nombre valido">
-                    <svg class="form__icon" width="20" height="20">
-                        <use href="./images/svg/icons.svg#icono-usuario"></use>
-                    </svg>    
-            
-                </div>
-            </label>
-            <label class="form__label" for="phone">telefono
-                <div class="form__picture">
-                    <input type="tel" class="form__input" id="phone" name="phone_number" required >
-                    <svg class="form__icon" width="20" height="20">
-                        <use href="./images/svg/icons.svg#icono-telefono"></use>
-                    </svg>    
-            
-                </div>
-            </label>
-            <label class="form__label" for="user_email">correo
-                <div class="form__picture">
-                    <input id="user_email" class="form__input" type="email" name="email"  />
-                    <svg class="form__icon" width="20" height="20">
-                        <use href="./images/svg/icons.svg#icono-email"></use>
-                    </svg> 
-                    
-                </div>
-            </label>
-            <label class="form__label" for="coment">
-            comentarios:
-            </label>
-            <textarea name="comentarios"  class="form__input-text form__input-text--active"  rows="5" placeholder="introduzca su texto"></textarea>
-            <label class="form__render">
-            <input  id="checkr" type="checkbox" name="terminos" value="acepto" class="form__terms-Conditions  form__terms-Conditions--checked"/>
-            <div class="form__hidden"></div>
-            <p class="form__warning">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones.</p>
-            </label>
-            <div class="center-form">
-            <button  class="form__send-button form__send-button--active" type="submit">Enviar</button>
-            </div>
-        </form>
-        </dialog>
         <section class="buttons">
         <button class="buttons__button button1 button1--active">todo</button>
         <button class="buttons__button button2 button--active">sitios-web</button>
@@ -223,18 +172,18 @@
 
 
 
-       <footer>
+       <footer class="footer">
         <div class="content-footer">
         <div class="content-footer__footing">   
             <a href="#" class="content-footer__logo-footing">WebStudio</a>
               <h5 class="content-footer__adress">Calz. Ticomán 500, Ciudad de México, CDMX, México</h5>
-            <ul class="contenido-footer__contactos">
+            <ul>
 
                 <li class="content-footer__links"><a href="mailto:info@example.com" id="correo-footer" class="content-footer__linkage content-footer__linkage--active">info@example.com</a></li>
                 <li class="content-footer__links"><a href="tel:+575555296000" id="telefono-footer" class="content-footer__linkage content-footer__linkage--active">+575555296000</a></li>
             </ul>
             </div>
-            <div class="redes">
+            <div class="content-footer__container">
 
                 <h6 class="content-footer__networks">ENCUENTRENOS EN:</h6>
                 <ul class="content-footer__social-networks">

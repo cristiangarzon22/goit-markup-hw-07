@@ -34,11 +34,11 @@
     </div>
     </header>
     <main>
-        <dialog id="modal1">
+        <dialog id="modal1" class="modal1">
             <button  onclick="window.modal1.close();">
              <div class="modal1__close  modal1__close--active">   
-            <svg  class="modal1__close-form" width="15" height="15">
-                <use href="./images/svg/icons.svg#icono-cerrar"></use>
+            <svg  class="modal1__icon-close" width="15" height="15">
+                <use href="./images/svg/icons.svg#icon-close"></use>
             </svg>
             </div>
             </button>
@@ -46,8 +46,8 @@
                 <legend class="form__legend">Deje sus datos, nos contactaremos con usted</legend>
                 <label class="form__label" for="nombre">Nombre
                     <div class="form__picture">
-                        <input type="text" class="form__input" name="name" id="nombre"   required   title="debe incluir por lo menos un nombre valido">
-                        <svg class="form__icon" width="20" height="20">
+                        <input type="text" class="form__input  form__input--border" name="name" id="nombre"   required   title="debe incluir por lo menos un nombre valido">
+                        <svg class="form__icon   form__icon--fill" width="20" height="20">
                             <use href="./images/svg/icons.svg#icono-usuario"></use>
                         </svg>    
                 
@@ -55,8 +55,8 @@
                 </label>
                 <label class="form__label" for="phone">telefono
                     <div class="form__picture">
-                        <input type="tel" class="form__input" id="phone" name="phone_number" required >
-                        <svg class="form__icon" width="20" height="20">
+                        <input type="tel" class="form__input  form__input--border" id="phone" name="phone_number" required >
+                        <svg class="form__icon   form__icon--fill" width="20" height="20">
                             <use href="./images/svg/icons.svg#icono-telefono"></use>
                         </svg>    
                 
@@ -64,8 +64,8 @@
                 </label>
                 <label class="form__label" for="user_email">correo
                     <div class="form__picture">
-                        <input id="user_email" class="form__input" type="email" name="email"  />
-                        <svg class="form__icon" width="20" height="20">
+                        <input id="user_email" class="form__input  form__input--border" type="email" name="email"  />
+                        <svg class="form__icon   form__icon--fill" width="20" height="20">
                             <use href="./images/svg/icons.svg#icono-email"></use>
                         </svg> 
                         
@@ -80,7 +80,7 @@
                 <div class="form__hidden"></div>
                 <p class="form__warning">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones.</p>
                 </label>
-                <div class="center-form">
+                <div class="form__center">
                 <button  class="form__send-button form__send-button--active" type="submit">Enviar</button>
                 </div>
             </form>
@@ -90,7 +90,7 @@
         <section class="banner">
             <div class="banner__poster">
                 <h1 class="banner__title">soluciones eficaces para su negocio</h1>
-            <button onclick="window.modal1.showModal();" class="banner__button">solicitar un servicio</button>  
+            <button onclick="window.modal1.showModal();" class="banner__button   banner__button--active">solicitar un servicio</button>  
             </div>
         </section>
         <section class="content">
@@ -330,19 +330,17 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="content-footer">
         <div class="content-footer__footing">   
             <a href="#" class="content-footer__logo-footing">WebStudio</a>
               <h5 class="content-footer__adress">Calz. Ticomán 500, Ciudad de México, CDMX, México</h5>
-            <ul class="contenido-footer__contactos">
-
+            <ul>
                 <li class="content-footer__links"><a href="mailto:info@example.com" id="correo-footer" class="content-footer__linkage content-footer__linkage--active">info@example.com</a></li>
                 <li class="content-footer__links"><a href="tel:+575555296000" id="telefono-footer" class="content-footer__linkage content-footer__linkage--active">+575555296000</a></li>
             </ul>
             </div>
-            <div class="redes">
-
+            <div class="content-footer__container">
                 <h6 class="content-footer__networks">ENCUENTRENOS EN:</h6>
                 <ul class="content-footer__social-networks">
                     <div class="content-footer__logo-footer content-footer__logo-footer--active">
