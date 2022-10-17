@@ -158,18 +158,24 @@
 .form__hidden{
     width: 20px;
     height: 20px;
-    transition: 1s all cubic-bezier(0.4,0,0.2,1);
     margin-right: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.form__terms-Conditions--checked:checked~.form__hidden > .form__checkbox {
+    visibility: visible;
+}
+
+.form__checkbox{
+    visibility: hidden;
+    width:20px;
+    height: 20px;
+    cursor: pointer;
     border-radius: 4px; 
-    margin-top: 5px;   
 }
-
-.form__terms-Conditions--checked:checked~.form__hidden{
-    background-color: var(--primary-blue);
-    border: 1px solid var(--primary-white);
-}
-
 .form__warning{
     font-family: 'Roboto';
     font-style: normal;
@@ -179,6 +185,7 @@
     letter-spacing: 0.03em;
     color: #757575;
     width: 400px;
+    cursor:pointer;
 }
 
 .form__center{
