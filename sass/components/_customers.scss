@@ -10,7 +10,7 @@
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--primary-black);
+        color:getColor('primaryBlack');
         padding-top: 59px;
     }
 
@@ -27,25 +27,25 @@
     &__logo-container{
         width:183px;
         height:100px;
-        border: 1px solid var(--second-grey);
+        border: 1px solid getColor('secondGrey');;
         border-radius: 4px;
         padding: 5px;
         cursor: pointer;
         transition: 250ms all cubic-bezier(0.4,0,0.2,1);
 
         &--active:hover{
-            border:1px solid var(--primary-blue);
+            border:1px solid getColor('primaryBlue');
         }
     }
 
 
     &__company{
-        fill: var(--second-grey);
+        fill: getColor('secondGrey');
         cursor:pointer;
         transition: 250ms all cubic-bezier(0.4,0,0.2,1);
 
         &--active:hover{
-            fill:var(--primary-blue);
+            fill:getColor('primaryBlue');
         }
     }
 }

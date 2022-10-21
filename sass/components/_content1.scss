@@ -15,7 +15,7 @@
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;    
-        color: var(--primary-black);
+        color: getColor('primaryBlack');
     }
 
     &__pictures{
@@ -47,7 +47,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-white);
+    color:getColor('primaryWhite');
     margin-top: 30px;
     }
 }

@@ -1,5 +1,5 @@
 .team{
-    background: var(--second-white);
+    background:getColor('secondWhite');
     margin-top:94px;
     padding-bottom: 90px;
 
@@ -13,7 +13,7 @@
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--primary-black); 
+        color:getColor('primaryBlack');
     }
 
     &__members{
@@ -28,7 +28,7 @@
 
     &__member{
         margin: 17px;
-        background-color: var(--primary-white);
+        background-color: getColor('primaryWhite');
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
@@ -46,7 +46,7 @@
         line-height: 19px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--primary-black);
+        color:getColor('primaryBlack');
         padding-top: 10px;
         text-align: center;
     }
@@ -62,7 +62,7 @@
         line-height: 19px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--primary-grey);
+        color: getColor('primaryGrey');
     }
 
     &__social-network{
@@ -83,18 +83,18 @@
         transition: 250ms all cubic-bezier(0.4,0,0.2,1);
 
         &--active:hover{
-            background-color: var(--primary-blue);
+            background-color:getColor('primaryBlue');
         }
     }
 
     &__effect{
-        fill: var(--second-grey);
+        fill:getColor('secondGrey');
         cursor:pointer;
         transition: 250ms all cubic-bezier(0.4,0,0.2,1);
 
 
         &--active:hover{
-            fill: var(--primary-white);
+            fill:getColor('primaryWhite');
         }
     }
 
